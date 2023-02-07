@@ -3,7 +3,7 @@ import profileImageURL from "../assets/profile-picture.png";
 export const LandingPage = () => {
   return (
     <div className="md:flex max-w-screen-xl mx-4 mt-8 xl:mx-auto">
-      <div className="border rounded-sm  border-charcoal-700 max-w-fit p-8 mx-auto md:mx-0 shadow-[0px_6px_0px] md:shadow-[-8px_8px_0px] md:shadow-charcoal-700">
+      <div className="border rounded-sm  border-charcoal-700 max-w-fit p-8 mx-auto md:mx-0 md:shadow-[-8px_8px_0px] md:shadow-charcoal-700">
         <img src={profileImageURL} alt="" className="rounded-full bg-orange" />
       </div>
       <div className="md:ml-4 md:flex md:flex-col md:justify-center">
