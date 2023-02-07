@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-      @apply text-charcoal-700;
-      @apply bg-charcoal-100;
-    } 
-  }
+  html, body {
+    @apply text-charcoal-700;
+    @apply bg-charcoal-100;
+    @apply sm:text-lg;
+    @apply lg:text-xl;
+  } 
+}
