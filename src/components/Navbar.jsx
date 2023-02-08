@@ -12,7 +12,7 @@ export const Navbar = () => {
           Contact
         </li>
         <li className="sm:absolute sm:right-4">
-          <button className=" border border-b-4 border-orange py-1 px-4 rounded-md text-orange  hover:border-charcoal-100 hover:text-charcoal-100 hover:bg-orange transform transition hover:-translate-y-0.5 hover:border">
+          <button className=" border border-b-4 border-orange py-1 px-4 rounded-md text-orange hover:bg-tan">
             RESUME
           </button>
         </li>
