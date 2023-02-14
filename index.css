@@ -6,7 +6,10 @@
   html, body {
     @apply text-charcoal-700;
     @apply bg-charcoal-100;
-    @apply sm:text-lg;
-    @apply lg:text-xl;
+    @apply sm:text-lg lg:text-xl;
   } 
+
+  section {
+    @apply mt-10;
+  }
 }
