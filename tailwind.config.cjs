@@ -11,8 +11,13 @@ module.exports = {
     },
     colors: {
       yellow: "#FBBC04",
+      "light-teal": "#D7F5E9",
       teal: "#009a9d",
+      "dark-teal": "#164e4f",
+      "extra-light-orange": "#ffe5dd",
+      "light-orange": "#FCCBBC",
       orange: "#F15627",
+      "dark-orange": "#C4441D",
       tan: "#FDCDA4",
       charcoal: {
         100: "#ECECED",
