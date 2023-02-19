@@ -4,8 +4,8 @@
 
 @layer base {
   html, body {
-    @apply text-charcoal-700;
-    @apply bg-charcoal-100;
+    @apply text-neutral-base;
+    @apply bg-neutral-lightest;
     @apply 2xl:text-lg;
     @apply font-medium;
   } 
