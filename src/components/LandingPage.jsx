@@ -2,18 +2,22 @@ import profileImageURL from "../assets/profile-picture.png";
 
 export const LandingPage = () => {
   return (
-    <section className="mt-8 md:mt-16 xl:mt-32 md:grid md:grid-cols-2">
-      <img
-        src={profileImageURL}
-        alt=""
-        className="rounded-full shadow-neutral-super-light shadow-lg p-4 md:p-8"
-      />
-      <div className="md:ml-4 md:flex md:flex-col md:justify-center">
-        <h2 className="mt-8">Hello! Welcome.</h2>
-        <p className="mt-4 lg:text-lg">
-          My name is <em className="text-brand-base">Kham</em>, and I'm a{" "}
-          <em className="text-brand-base">software engineer</em>. I design and
-          build things for the web. Please look around!
+    <section className="grid justify-center md:grid-cols-2 gap-fluid-s pb-14">
+      <div className="flex items-center justify-center md:justify-end">
+        <div className="w-full h-auto max-w-xs p-8 border rounded-lg aspect-square shadow-3d-md-tr md:shadow-3d-lg-bl">
+          <img
+            src={profileImageURL}
+            alt=""
+            className="p-1 border rounded-full hover:shadow hover:shadow-brand"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col items-start justify-center">
+        <h2 className="text-center text-brand">Hello, welcome.</h2>
+        <p className="font-semibold">
+          I'm <em className="text-light-accent">Kham</em>, a{" "}
+          <em className=" text-light-accent">software engineer</em>. I design
+          and build things for the web. Please look around!
         </p>
       </div>
     </section>

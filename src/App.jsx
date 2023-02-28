@@ -1,19 +1,21 @@
-import { useMediaQuery } from "react-responsive";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import { LandingPage } from "./components/LandingPage";
-import { ProjectsMobileView } from "./components/ProjectsMobileView";
-import { ProjectsDesktopView } from "./components/ProjectsDesktopView";
+import { Projects } from "./components/Projects";
 
 function App() {
-  const isBigScreen = useMediaQuery({
-    query: "(min-width: 900px)",
-  });
-
   return (
-    <div className="max-w-screen-lg px-4 mx-auto md:px-8 lg:px-16 2xl:max-w-screen-xl">
-      <Navbar />
-      <LandingPage />
-      {isBigScreen ? <ProjectsDesktopView /> : <ProjectsMobileView />}
+    <div>
+      <div className="bg-dark-shade text-light-shade wavy-border-bottom">
+        <div className="max-w-screen-xl mx-auto px-fluid-s-xl">
+          <Navbar />
+          <div className=" py-fluid-s-xl">
+            <LandingPage />
+          </div>
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto px-fluid-s-xl my-fluid-s-xl">
+        <Projects />
+      </div>
     </div>
   );
 }
