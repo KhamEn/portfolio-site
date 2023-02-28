@@ -29,8 +29,11 @@ export const Projects = () => {
             </ul>
 
             <div className="flex flex-wrap gap-4 font-ui text-light-accent -text-fluid-1">
-              <button className="flex items-center gap-1 p-2 grow-0 hover:cursor-pointer hover:text-external">
-                {/* <img src={githubIconUrl} alt="" /> */}
+              <a
+                href="#"
+                aria-label="Code"
+                className="flex items-center gap-1 p-2 rounded-sm outline-none grow-0 hover:cursor-pointer hover:text-external focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-dark-shade focus-visible:text-external"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -51,9 +54,12 @@ export const Projects = () => {
                   </defs>
                 </svg>
                 Code
-              </button>
-              <button className="flex items-center gap-1 p-2 grow-0 hover:cursor-pointer hover:text-external ">
-                {/* <img src={linkIconUrl} alt="" /> */}
+              </a>
+              <a
+                href="#"
+                aria-label="Live"
+                className="flex items-center gap-1 p-2 rounded-sm outline-none grow-0 hover:cursor-pointer hover:text-external focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-dark-shade focus-visible:text-external"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -69,9 +75,13 @@ export const Projects = () => {
                   />
                 </svg>
                 Live
-              </button>
+              </a>
 
-              <button className="flex items-center justify-center gap-1 p-4 font-bold border rounded-lg grow -text-fluid-1 font-ui hover:border-brand hover:text-brand hover:cursor-pointer text-dark-accent">
+              <a
+                href="#"
+                aria-label="Project Detail"
+                className="flex items-center justify-center gap-1 p-4 font-bold border rounded-lg outline-none grow -text-fluid-1 font-ui hover:border-brand hover:text-brand hover:cursor-pointer text-dark-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-dark-shade focus-visible:text-brand"
+              >
                 Project Detail
                 <svg
                   width="25"
@@ -87,7 +97,7 @@ export const Projects = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>

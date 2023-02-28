@@ -17,6 +17,7 @@ module.exports = {
       "dark-shade": "#1c282c",
       external: "#64bfc9",
       "second-dark-shade": "#0b2449",
+      ring: "#ff86e8",
     },
 
     extend: {
@@ -60,6 +61,13 @@ module.exports = {
       },
     },
   },
-
+  variants: {
+    extend: {
+      ringWidth: ["focus-visible"],
+      ringColor: ["focus-visible"],
+      ringOffsetWidth: ["focus-visible"],
+      ringOffsetColor: ["focus-visible"],
+    },
+  },
   plugins: [],
 };
