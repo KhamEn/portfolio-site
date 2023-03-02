@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    @apply text-dark-shade;
-    @apply bg-light-shade;
+    @apply bg-dark-shade;
+    @apply text-light-shade;
     @apply text-fluid-0;
   } 
   
