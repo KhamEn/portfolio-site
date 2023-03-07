@@ -3,17 +3,23 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  daisyui: {
+    themes: false,
+  },
   theme: {
     fontFamily: {
       ui: ["DM Sans", ...defaultTheme.fontFamily.sans],
       sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
       mono: ["DM Mono", ...defaultTheme.fontFamily.mono],
+      serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
     },
     colors: {
       "light-shade": "#c1c3be",
-      "light-accent": "#E0CAAD",
+      "light-accent": "#bcc28d",
+      // "light-accent": "#E0CAAD",
       brand: "#ffa349",
-      "dark-accent": "#cece51",
+      "dark-accent": "#ff531c",
+      // "dark-accent": "#cece51",
       "dark-shade": "#1c282c",
       external: "#64bfc9",
       "second-dark-shade": "#314157",
@@ -43,6 +49,7 @@ module.exports = {
         "3d-sm-bl": "-1px 1px 0px,-2px 2px 0px,-3px 3px 0px,-4px 4px 0px",
         "3d-sm-tr": "1px -1px 0px,2px -2px 0px,3px -3px 0px",
         "plane-br": "9px 9px 0px",
+        "plane-bl": "-9px 9px 0px",
       },
       fontSize: {
         "-fluid-1": "clamp(0.94rem, calc(0.88rem + 0.31vw), 1.00rem)",
@@ -57,12 +64,15 @@ module.exports = {
         tablet: "530px",
       },
       spacing: {
+        component: "clamp(1rem, calc(-0.02rem + 2.60vw), 2.06rem)",
         "fluid-2xs": "clamp(0.50rem, calc(0.44rem + 0.31vw), 0.69rem)",
         "fluid-xs": "clamp(0.75rem, calc(0.65rem + 0.52vw), 1.06rem)",
         "fluid-s": "clamp(1.00rem, calc(0.88rem + 0.63vw), 1.38rem)",
         "fluid-s-xl": "clamp(1.00rem, calc(-1.42rem + 12.08vw), 8.25rem)",
         "fluid-2xs-s": "clamp(0.50rem, calc(-0.02rem + 2.60vw), 2.06rem)",
         "fluid-m-lg": "clamp(1.50rem, calc(1.08rem + 2.08vw), 2.75rem)",
+        "fluid-lg-2xl": "clamp(2.00rem, calc(0.83rem + 5.83vw), 5.50rem)",
+        "fluid-xl-3xl": "clamp(3.00rem, calc(1.25rem + 8.75vw), 8.25rem)",
       },
     },
   },
@@ -74,5 +84,5 @@ module.exports = {
       ringOffsetColor: ["focus-visible"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

@@ -1,21 +1,19 @@
 import { Navbar } from "./components/navbar/Navbar";
 import { LandingPage } from "./components/LandingPage";
 import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
 
 function App() {
   return (
-    <div className="max-w-screen-xl mx-auto px-fluid-s-xl">
+    <div className="mx-auto max-w-screen-xl px-fluid-s-xl">
       <Navbar />
-
-      <div className=" my-fluid-s-xl">
+      <div className="my-fluid-xl-3xl">
         <LandingPage />
       </div>
-
-      <hr className="border-dashed" />
-
-      <div className=" my-fluid-s-xl">
-        <Projects />
-      </div>
+      <hr className="mx-auto my-fluid-xl-3xl w-2/3 border-dashed border-[#7e9496]" />
+      <Projects />
+      <hr className="my-fluid-xl-3xl mx-auto w-2/3 border-dashed border-[#7e9496]" />
+      <Contact />
     </div>
   );
 }

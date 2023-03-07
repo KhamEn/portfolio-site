@@ -10,15 +10,15 @@
   } 
   
   h1 {
-    @apply font-bold text-fluid-4 drop-shadow-md;
+    @apply font-serif font-black text-fluid-4 drop-shadow-md;
   }        
 
   h2 {
-    @apply font-bold text-fluid-3 drop-shadow-md;
+    @apply font-serif font-black text-fluid-3 drop-shadow-md;
   }    
 
   h3 {
-    @apply text-fluid-1 drop-shadow-md;
+    @apply font-serif text-fluid-1 drop-shadow-md;
   }    
 
   h4 {
@@ -32,10 +32,12 @@
   h6 {
     @apply -text-fluid-1 drop-shadow-md;
   }
-}
 
-.wavy-border-bottom {
-  mask: 
-    radial-gradient(14.14px at 50% calc(100% - 20.00px),#000 99%,#0000 101%) calc(50% - 20px) 0/40px 100%,
-    radial-gradient(14.14px at 50% calc(100% + 10.00px),#0000 99%,#000 101%) 50% calc(100% - 10px)/40px 100% repeat-x;
+  *:focus-visible {
+    @apply ring-4 ring-external outline-none
+  }
+
+  hr {
+    @apply border-[#7e9496]
+  }
 }
