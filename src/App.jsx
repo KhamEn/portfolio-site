@@ -5,7 +5,7 @@ import { Contact } from "./components/Contact";
 
 function App() {
   return (
-    <div className="mx-auto max-w-screen-xl px-fluid-s-xl">
+    <div id="home" className="mx-auto max-w-screen-xl px-fluid-s-xl">
       <Navbar />
       <div className="my-fluid-xl-3xl">
         <LandingPage />
@@ -14,6 +14,8 @@ function App() {
       <Projects />
       <hr className="my-fluid-xl-3xl mx-auto w-2/3 border-dashed border-[#7e9496]" />
       <Contact />
+      <hr className="mx-auto mt-fluid-xl-3xl border-dashed border-[#7e9496]" />
+      <Navbar />
     </div>
   );
 }

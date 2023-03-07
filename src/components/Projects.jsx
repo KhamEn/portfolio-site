@@ -3,7 +3,7 @@ import schemeBankDesktopImgURL from "../assets/projects/scheme-bank-desktop-16-9
 
 export const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <h2 className="my-fluid-m-lg text-center font-serif text-brand">
         I Made.
       </h2>

@@ -6,7 +6,7 @@ export const NavbarSmallScreen = () => {
       <ul className="flex flex-wrap items-center justify-center gap-fluid-s pt-fluid-s">
         <li>
           <a
-            href="#"
+            href="#home"
             aria-label="Home"
             className="flex items-center gap-1 rounded-xl font-bold text-brand  outline-none hover:cursor-pointer hover:text-brand focus-visible:text-brand"
           >
@@ -26,10 +26,10 @@ export const NavbarSmallScreen = () => {
           </a>
         </li>
       </ul>
-      <ul className="my-fluid-s flex flex-wrap items-center justify-center gap-fluid-s">
+      <ul className="flex flex-wrap items-center justify-center gap-fluid-s py-fluid-s">
         <li>
           <a
-            href="#"
+            href="#home"
             aria-label="Projects"
             className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
           >
@@ -38,7 +38,7 @@ export const NavbarSmallScreen = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="#projects"
             aria-label="Projects"
             className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
           >
@@ -47,7 +47,7 @@ export const NavbarSmallScreen = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="#contacts"
             aria-label="Contact"
             className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
           >

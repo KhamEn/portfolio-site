@@ -8,7 +8,7 @@ async function showTooltip(elementId) {
 
 export const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <h2 className="my-fluid-m-lg text-center font-serif text-brand">
         Get In Touch.
       </h2>

@@ -18,8 +18,8 @@ export const NavbarBigScreen = () => {
         <ul className="flex flex-wrap items-center justify-center gap-fluid-s">
           <li>
             <a
-              href="#"
-              aria-label="Projects"
+              href="#home"
+              aria-label="home"
               className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
             >
               HOME
@@ -27,8 +27,8 @@ export const NavbarBigScreen = () => {
           </li>
           <li>
             <a
-              href="#"
-              aria-label="Projects"
+              href="#projects"
+              aria-label="projects"
               className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
             >
               PROJECTS
@@ -36,7 +36,7 @@ export const NavbarBigScreen = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#contact"
               aria-label="Contact"
               className="rounded-xl p-1 outline-none hover:cursor-pointer hover:text-brand  focus-visible:text-brand"
             >
