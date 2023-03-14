@@ -2,13 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TextareaAutosize from "react-textarea-autosize";
 
-async function showSuccessTooltip() {
-  const element = document.getElementById("contact-form");
-  element.classList.add("tooltip");
-  setTimeout(() => element.classList.remove("tooltip"), 1000);
-}
-
-export const ContactForm = () => {
+export default function ContactForm() {
   const [showSuccessToast, setShowSuccessToast] = useState(false);
   const [showFailureToast, setShowFailureToast] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -88,7 +82,7 @@ export const ContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col gap-2 rounded-md border border-light-accent p-component font-ui -text-fluid-1 text-light-accent shadow-3d-md-br shadow-light-accent "
+        className="flex flex-col gap-2 rounded-md border border-light-shade p-component font-ui -text-fluid-1 text-light-shade shadow-3d-md-br shadow-light-shade "
         id="contact-form"
       >
         <label htmlFor="user_name" className="font-bold hover:cursor-pointer">
@@ -98,7 +92,7 @@ export const ContactForm = () => {
           name="user_name"
           id="user_name"
           type="text"
-          className="rounded-xl border border-light-accent bg-dark-shade p-fluid-2xs text-light-shade"
+          className="rounded-xl border border-light-shade bg-dark-shade p-fluid-2xs text-light-shade"
           maxLength={20}
           required
         />
@@ -110,7 +104,7 @@ export const ContactForm = () => {
           name="user_email"
           id="user_email"
           type="email"
-          className="rounded-xl border border-light-accent bg-dark-shade p-fluid-2xs text-light-shade"
+          className="rounded-xl border border-light-shade bg-dark-shade p-fluid-2xs text-light-shade"
           required
         />
 
@@ -124,7 +118,7 @@ export const ContactForm = () => {
           name="message_subject"
           id="message_subject"
           type="text"
-          className="rounded-xl border border-light-accent bg-dark-shade p-fluid-2xs text-light-shade"
+          className="rounded-xl border border-light-shade bg-dark-shade p-fluid-2xs text-light-shade"
           required
         />
 
@@ -137,7 +131,7 @@ export const ContactForm = () => {
         <TextareaAutosize
           name="message_body"
           id="message_body"
-          className="rounded-xl border border-light-accent bg-dark-shade p-fluid-2xs text-light-shade"
+          className="rounded-xl border border-light-shade bg-dark-shade p-fluid-2xs text-light-shade"
           minRows={5}
           required
         />
@@ -145,7 +139,7 @@ export const ContactForm = () => {
         <button
           type="submit"
           value="Send"
-          className="mt-fluid-m-lg flex grow items-center justify-center gap-1 rounded-xl border border-dark-accent p-4 font-ui -text-fluid-1 font-bold text-dark-accent outline-none hover:cursor-pointer hover:bg-dark-accent hover:text-dark-shade focus-visible:bg-dark-accent focus-visible:text-dark-shade"
+          className="mt-fluid-m-lg flex grow items-center justify-center gap-1 rounded-xl border border-brand p-4 font-ui -text-fluid-1 font-bold text-brand outline-none hover:cursor-pointer hover:bg-brand hover:text-dark-shade focus-visible:bg-brand focus-visible:text-dark-shade"
         >
           SEND MESSAGE
           <svg
@@ -166,4 +160,4 @@ export const ContactForm = () => {
       </form>
     </>
   );
-};
+}

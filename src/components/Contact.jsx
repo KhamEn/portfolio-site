@@ -1,4 +1,5 @@
-import { ContactForm } from "./ContactForm";
+import { forwardRef } from "react";
+import ContactForm from "./ContactForm";
 
 async function showTooltip(elementId) {
   const element = document.getElementById(elementId);
@@ -6,10 +7,10 @@ async function showTooltip(elementId) {
   setTimeout(() => element.classList.remove("tooltip"), 1000);
 }
 
-export const Contact = () => {
+export default forwardRef(function Contact(props, ref) {
   return (
-    <section id="contact">
-      <h2 className="my-fluid-m-lg text-center font-serif text-brand">
+    <section ref={ref}>
+      <h2 className="my-fluid-m-lg text-center font-serif text-light-accent">
         Get In Touch.
       </h2>
 
@@ -143,7 +144,7 @@ export const Contact = () => {
             viewBox="0 0 66 41"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="inline text-dark-accent"
+            className="inline text-brand"
           >
             <g clipPath="url(#clip0_42_202)">
               <path
@@ -172,4 +173,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-};
+});

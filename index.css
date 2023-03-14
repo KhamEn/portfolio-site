@@ -34,7 +34,7 @@
   }
 
   *:focus-visible {
-    @apply ring-4 ring-external outline-none
+    @apply ring-4 ring-dark-accent outline-none
   }
 
   hr {

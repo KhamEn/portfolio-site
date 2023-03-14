@@ -16,14 +16,10 @@ module.exports = {
     colors: {
       "light-shade": "#c1c3be",
       "light-accent": "#bcc28d",
-      // "light-accent": "#E0CAAD",
       brand: "#ffa349",
       "dark-accent": "#ff531c",
-      // "dark-accent": "#cece51",
       "dark-shade": "#1c282c",
-      external: "#64bfc9",
-      "second-dark-shade": "#314157",
-      ring: "#ff86e8",
+      external: "#33c3ff",
     },
 
     extend: {
